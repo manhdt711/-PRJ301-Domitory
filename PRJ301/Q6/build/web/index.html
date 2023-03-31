@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function change() {
+                document.getElementById("f").submit();
+            }
+        </script>
+        <style>
+            p{
+                padding-left: 20px;
+            }
+            h1{
+                text-align: center;
+                color: blue;
+            }
+            .hh1{
+                margin-top: -25px;
+                }
+            .a{
+
+                width: 500px;
+                height: 300px;
+                border: 3px solid blue;
+            }
+            .a1{
+                padding-top: 200px;
+                display: flex;
+                justify-content: center;
+            }
+            .nhap{
+                margin-left: 10px;
+            }
+            .op{
+                margin-left: 5px;
+            }
+            .kq{
+                display: flex;
+                padding-left: 80px;
+                padding-bottom: 20px;
+            }
+            .input{
+                margin-left: 10px;
+            }
+            .ketqua{
+                margin-left: 70px;
+                width: 300px;
+                }
+                .kln{
+                    margin-left: 50px;
+                    }
+        </style>
+    </head>
+    <body>
+        <form action="Excercise6" method="get" id="f">
+            <div class="a1">
+                <div class="a">
+                    <h1>GIẢI PHƯƠNG TRÌNH</h1>
+                    <h1 class="hh1">BẬC NHẤT</h1>
+                    <p>Nhập a:<input class="nhap" type='text' name="a"></p>
+                    <p>Nhập b:<input class="nhap" type='text' name="b"></p>
+                    <div class="kq" onchange="change()" >
+                        <input class="op"  type="submit" name="op" value="Giải PT">
+                        <input class="op" type="submit" name="op" value="Thoát">
+                    </div>
+                    <div class="kln">Kết luận nghiệm:</div> 
+                        <br><input class="ketqua" type='text'>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
